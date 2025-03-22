@@ -7,3 +7,4 @@
 *.css text eol=lf
 *.md text eol=lf
 .gitignore text eol=lf
+.docker-compose.yml text eol=lf

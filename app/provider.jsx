@@ -1,16 +1,20 @@
 "use client"
-import React from 'react'
+import React, { Suspense } from 'react'
 import { ConvexProvider, ConvexReactClient } from "convex/react";
+import AuthProvider from './AuthProvider';
 
 function Provider({ children }) {
     const convex = new ConvexReactClient(process.env.NEXT_PUBLIC_CONVEX_URL); 
-
+    
   return (
-    <div>
+    <Suspense fallback={<p>Loading...</p>}>
         <ConvexProvider client={convex}>
-        {children}
+          <AuthProvider> 
+          {children}
+          </AuthProvider>
+        
         </ConvexProvider>
-        </div>
+        </Suspense>
   )
 }
 

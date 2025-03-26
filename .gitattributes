@@ -8,3 +8,4 @@
 *.md text eol=lf
 .gitignore text eol=lf
 .docker-compose.yml text eol=lf
+.convex/config.json text eol=lf

@@ -25,7 +25,7 @@ export const CreateUser=mutation({
               const result=await ctx.db.insert('users',{
                 ...data
                 });
-                console.log(result);
+                
                 return data;
               }
 

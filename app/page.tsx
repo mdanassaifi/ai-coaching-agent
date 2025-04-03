@@ -6,7 +6,7 @@ export default function Home() {
   return (
    <div>
     <h2 >Welcome Ai voice Coaching Agent </h2>
-    <Button>Start</Button>
+    <Button>Started</Button>
     <UserButton/>
    </div>
   );

@@ -1,9 +1,12 @@
 import React from 'react'
+import AppHeader from './_components/AppHeader';
 
-function DashboardLayout ({children}) {
+function dashboardLayout ({children}) {
   return (
-    <div>{children}</div>
+    <div>
+      <AppHeader/>
+      {children}</div>
   )
 }
 
-export default DashboardLayout
+export default dashboardLayout

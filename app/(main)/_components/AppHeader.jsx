@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import { UserButton } from '@stackframe/stack'
 
 
 function AppHeader() {
@@ -9,6 +10,9 @@ function AppHeader() {
         width={165}
         height={200}
         />
+
+            <UserButton/>
+        
     </div>
   )
 }

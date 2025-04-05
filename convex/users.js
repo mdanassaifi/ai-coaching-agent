@@ -1,10 +1,11 @@
 import { v } from "convex/values";
 import { mutation} from "./_generated/server";  
+// import { CreateUser } from './users';
 
 export const CreateUser=mutation({
     args:{
-        name:v.string(),
-        email:v.string()
+        name:v.string (),
+        email:v.string  ()
 
     },
     handler:async (ctx,args )=>{
@@ -25,11 +26,11 @@ export const CreateUser=mutation({
               const result=await ctx.db.insert('users',{
                 ...data
                 });
-                
+                console.log(result);
                 return data;
               }
 
-              return userData[0];
+              return userData[0]
          }
     })
 

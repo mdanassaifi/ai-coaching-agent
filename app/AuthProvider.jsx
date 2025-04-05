@@ -3,6 +3,7 @@ import { useUser } from '@stackframe/stack'
 import { useMutation } from 'convex/react';
 import React, { useEffect } from 'react'
 import { async } from './../middleware';
+import { CreateUser } from './../convex/users';
 
 
 function AuthProvider( {children}) {

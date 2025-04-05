@@ -1,9 +1,12 @@
 import React from 'react'
+import FeatureAssistant from './_components/FeatureAssistant';
 
 
 function dashboard() {
   return (
-    <div>Dashboard</div>
+    <div>
+       <FeatureAssistant/>
+    </div>
   )
 }
 

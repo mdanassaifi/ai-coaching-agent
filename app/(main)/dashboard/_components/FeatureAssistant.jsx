@@ -12,9 +12,10 @@ function FeatureAssistant() {
              <h2 className='font-medium text-gray-500'>My Workspace </h2>
              <h2 className='text-3xl font-bold'>Welcome Back, {user?.displayName} </h2>
       </div>
-      <Button>Profile</Button>
-     </div>
-    </div>
+        <Button>Profile</Button>
+     
+       </div>
+   </div>
   )
 }
 

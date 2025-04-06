@@ -24,7 +24,7 @@ function FeatureAssistant() {
           <Image src={option.icon} alt={option.name} 
           width={150}
            height={150}
-           className='h-[70px] w-[70px]'
+           className='h-[70px] w-[70px] hover:rotate-12 cursor-pointer'
            />
            <h2 className='mt-2'> {option.name}</h2>
           </div>

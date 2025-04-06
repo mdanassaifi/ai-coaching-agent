@@ -2,6 +2,8 @@
 import { Button } from '@/components/ui/button';
 import { useUser } from '@stackframe/stack'
 import React from 'react'
+import { ExpertsList } from './../../../../services/options';
+import  Image  from 'next/image';
 
 function FeatureAssistant() {
   const user = useUser();
@@ -15,6 +17,17 @@ function FeatureAssistant() {
         <Button>Profile</Button>
      
        </div>
+     <div>
+       {ExpertsList.map ((option, index)=>(
+         <div key={index} >
+          <Image src={option.icon} alt={option.name} 
+          width={150}
+           height={150}
+           className='h-[70px] w-[70px]'
+           />
+          </div>
+       ))}
+      </div>   
    </div>
   )
 }

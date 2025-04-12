@@ -7,7 +7,7 @@ export default function Home() {
    <div>
     <h2 className=" font-bold text-red-600 ">Welcome Ai voice Coaching Agent </h2>
   
-    <Button>Start Trial </Button>
+    <Button>Start </Button>
     <UserButton/>
    </div>
   );

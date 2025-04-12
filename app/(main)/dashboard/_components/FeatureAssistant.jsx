@@ -5,6 +5,7 @@ import React from 'react'
 import { ExpertsList } from './../../../../services/options';
 import  Image  from 'next/image';
 import { BlurFade } from '@/components/magicui/blur-fade';
+import UserInputDialog from './UserInputDialog';
 
 function FeatureAssistant() {
   const user = useUser();
@@ -22,6 +23,8 @@ function FeatureAssistant() {
      <div className='grid grid-cols-2 lg:grid-cols-5 xl:grid-cols-5 gap-10 mt-10'>
        {ExpertsList.map ((option, index)=>(
             <BlurFade key={option.icon} delay={0.25 + index * 0.05} inView>
+              
+              <UserInputDialog ExpertsList={option} >
 
          <div key={index} className='p-3 bg-secondary rounded-3xl flex flex-col justify-center items-center ' >
           <Image src={option.icon} alt={option.name} 
@@ -31,6 +34,7 @@ function FeatureAssistant() {
            />
            <h2 className='mt-2'> {option.name}</h2>
           </div>
+          </UserInputDialog>
           </BlurFade>
        ))}
       </div>   

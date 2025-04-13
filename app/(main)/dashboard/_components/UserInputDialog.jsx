@@ -25,12 +25,16 @@ function UserInputDialog({children, ExpertsList}) {
                <Textarea placeholder="Enter your topic here..." className='mt-2'/>
                 
                <h2 className='text-black mt-5'> Enter a topic to master your skills in {ExpertsList.name} </h2>
-                <div>
+                <div className='grid grid-cols-3 md:grid-cols-5 gap-6 mt-3'>
                   {CoachingExpert.map((expert,index)=>(
-                    <Image key={index} src={expert.avatar} alt={expert.name}
+                    <div key={index} >
+                    <Image src={expert.avatar} alt={expert.name}
                         width={100}
                         height={100}
+                        className='rounded-2xl h-[80px] w-[80px] object-cover'
                     />
+                    <h2>{expert.name}</h2>
+                    </div>
                   ))}
 
                 </div>

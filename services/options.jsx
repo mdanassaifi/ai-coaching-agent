@@ -23,3 +23,24 @@ export const ExpertsList=[
     },
    
 ]
+
+export const CoachingExpert=[
+
+    {
+        name: 'Joanna',
+        avatar:'/t1.jpg'
+
+    },
+
+    {
+        name: 'Sallie',
+        avatar:'/t2.jpg'
+    
+    },
+
+    {
+        name: 'Mathhew',
+        avatar:'/t3.jpg'
+        
+    }
+]

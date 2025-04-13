@@ -15,10 +15,11 @@ function UserInputDialog({children, ExpertsList}) {
     <DialogTrigger>{children}</DialogTrigger>
     <DialogContent>
       <DialogHeader>
-        <DialogTitle>Are you absolutely sure?</DialogTitle>
+        <DialogTitle>{ExpertsList.name}</DialogTitle>
         <DialogDescription>
-          This action cannot be undone. This will permanently delete your account
-          and remove your data from our servers.
+            <div>
+              <h2> Enter a topic to master your skills in {ExpertsList.name} </h2>
+            </div>
         </DialogDescription>
       </DialogHeader>
     </DialogContent>

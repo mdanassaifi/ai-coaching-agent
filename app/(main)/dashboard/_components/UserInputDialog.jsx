@@ -7,6 +7,7 @@ import {
     DialogTitle,
     DialogTrigger,
   } from "@/components/ui/dialog"
+import { Textarea } from '@/components/ui/textarea'
 
   
 function UserInputDialog({children, ExpertsList}) {
@@ -16,9 +17,10 @@ function UserInputDialog({children, ExpertsList}) {
     <DialogContent>
       <DialogHeader>
         <DialogTitle>{ExpertsList.name}</DialogTitle>
-        <DialogDescription>
-            <div>
-              <h2> Enter a topic to master your skills in {ExpertsList.name} </h2>
+        <DialogDescription asChild>
+            <div className='mt-3'>
+              <h2 className='text-black'> Enter a topic to master your skills in {ExpertsList.name} </h2>
+               <Textarea placeholder="Enter your topic here..." className='mt-2'/>
             </div>
         </DialogDescription>
       </DialogHeader>

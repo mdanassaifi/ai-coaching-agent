@@ -4,6 +4,7 @@ import { CoachingExpert } from '@/services/options';
 import { useQuery } from 'convex/react';
 import { useParams } from 'next/navigation'
 import React, { useEffect, useState } from 'react'
+import { ExpertsList } from './../../../../services/options';
 
 function DiscussionRoom() {
     const {roomid}= useParams();
@@ -21,7 +22,8 @@ function DiscussionRoom() {
 
 
   return (
-    <div>DiscussionRoom</div>
+      <div> {DiscussionRoomData?. ExpertsList} </div>
+
   )
 }
 
